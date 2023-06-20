@@ -1,0 +1,40 @@
+.sub__banner__container {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 88%;
+    margin: 10px auto;
+    height: 68px;
+
+    // align-items: center;
+    .sub__banner__item {
+        width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .sub__banner__img {
+            width: 20%;
+            height: 68px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .sub__banner__info {
+            width: 75%;
+            height: 68px;
+            margin-left: 4px;
+            p {
+                font-size: 13px;
+                display: inline-block;
+            }
+
+            h5 {
+                font-size: 1.1rem;
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+    }
+}

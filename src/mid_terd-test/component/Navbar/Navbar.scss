@@ -1,0 +1,115 @@
+$backGroundColor : black;
+$whiteColor: white;
+$blackColor: black;
+$navBar_2_color: white;
+
+#nav__main__one {
+    background-color: $backGroundColor !important;
+    height: 44px !important;
+
+    .nav__title {
+        color: $whiteColor !important;
+    }
+
+    #nav_one_container {
+        position: relative;
+        right: -120%;
+        display: flex;
+
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown>.dropdown-toggle:active {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+        }
+
+        .dropdown button {
+            background-color: $backGroundColor !important;
+            margin: 0 10px;
+            border: none;
+        }
+    }
+}
+
+
+#nav__main__two {
+    height: 60px !important;
+    background-color: $navBar_2_color !important;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 15px 10px -15px #111;
+
+    .navbar-nav {
+        position: relative;
+        right: -50%;
+    }
+
+    .nav__title__two {
+        color: $blackColor;
+        font-weight: 900;
+
+        span {
+            color: red !important;
+        }
+    }
+
+    #nav_two_container {
+        // position: relative;
+        display: flex;
+        // right: -50%;
+        background-color: #F8F9FA;
+
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown>.dropdown-toggle:active {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+        }
+
+        .dropdown {
+            button {
+                background-color: $navBar_2_color;
+                color: $blackColor;
+                margin: 0 10px;
+                border: none;
+            }
+
+            background-color: white;
+        }
+
+        .sub1 {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .nav__icon {
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0 80px;
+
+        i {
+            margin: 0 20px;
+        }
+
+        .nav__icon__item {
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: #8b8c8e6f;
+            border-radius: 50%;
+        }
+    }
+}
