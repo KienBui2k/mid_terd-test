@@ -24,7 +24,9 @@ $navBar_2_color: white;
             /*Without this, clicking will make it sticky*/
             pointer-events: none;
         }
-
+        .dropdown{
+            margin-top: 8px;
+        }
         .dropdown button {
             background-color: $backGroundColor !important;
             margin: 0 10px;
